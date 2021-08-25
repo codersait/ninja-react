@@ -1,6 +1,6 @@
 import Blog from './Blog'
 
-const BlogList = ({ blogs, title, handleDelete }) => {
+const BlogList = ({ blogs, title }) => {
   // const blogs = props.blogs
   // const title = props.title
 
@@ -8,7 +8,7 @@ const BlogList = ({ blogs, title, handleDelete }) => {
     <div className='blog-list'>
       <h1>{title}</h1>
       {blogs.map(blog => (
-        <Blog blog={blog} handleDelete={handleDelete} key={blog.id} />
+        <Blog blog={blog} key={blog.id} />
       ))}
     </div>
   )

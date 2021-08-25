@@ -1,11 +1,10 @@
-const Blog = ({ blog, handleDelete }) => {
+const Blog = ({ blog }) => {
   return (
     <div className='blog-preview'>
-      <h1>{blog.title}</h1>
+      <h2>{blog.title}</h2>
       <p>
         written by <strong>{blog.author}</strong>
       </p>
-      <button onClick={() => handleDelete(blog.id)}>delete</button>
     </div>
   )
 }
